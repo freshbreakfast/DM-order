@@ -22,10 +22,8 @@ html, body {
 .page img {
     width: 100%;
     display: block;
-    object-fit: contain;
 }
 
-/* 提示文字 */
 .hint {
     position: fixed;
     bottom: 92px;
@@ -43,7 +41,6 @@ html, body {
     50% { opacity: .25; }
 }
 
-/* 按鈕區 */
 .buttons {
     position: fixed;
     bottom: 20px;
@@ -79,7 +76,6 @@ html, body {
     color: #111;
 }
 
-/* 手機版 */
 @media (max-width: 768px) {
     .buttons {
         width: 90%;
@@ -125,3 +121,10 @@ html, body {
 
 </body>
 </html>
+
+然後 GitHub repo 裡確認有這 4 個檔：
+
+index.html
+投影片1.jpg
+投影片2.jpg
+投影片3.jpg
