@@ -4,46 +4,69 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>豆漿三款｜新品上市</title>
+<title>豆漿優惠活動</title>
 
 <style>
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
     background: #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
     font-family: "Noto Sans TC", sans-serif;
-    position: relative;
+    overflow-x: hidden;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+.page {
+    width: 100%;
+}
+
+.page img {
+    width: 100%;
     display: block;
+    object-fit: contain;
 }
 
+/* 提示文字 */
+.hint {
+    position: fixed;
+    bottom: 92px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,0.75);
+    font-size: 14px;
+    z-index: 999;
+    animation: fade 1.8s infinite;
+    letter-spacing: 1px;
+}
+
+@keyframes fade {
+    0%,100% { opacity: .7; }
+    50% { opacity: .25; }
+}
+
+/* 按鈕區 */
 .buttons {
-    position: absolute;
-    bottom: 28px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    gap: 14px;
-    z-index: 10;
+    gap: 12px;
+    z-index: 1000;
 }
 
 .btn {
-    padding: 14px 28px;
+    padding: 14px 24px;
     border-radius: 999px;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 14px rgba(0,0,0,.3);
     transition: all 0.25s ease;
-    box-shadow: 0 6px 18px rgba(0,0,0,.25);
+    white-space: nowrap;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
 }
 
 .line-btn {
@@ -56,36 +79,23 @@ img {
     color: #111;
 }
 
-.btn:hover {
-    transform: translateY(-2px);
-}
-
-.hint {
-    position: absolute;
-    bottom: 95px;
-    color: rgba(255,255,255,0.7);
-    font-size: 14px;
-    animation: fade 1.8s infinite;
-}
-
-@keyframes fade {
-    0%,100% { opacity: .7; }
-    50% { opacity: .25; }
-}
-
+/* 手機版 */
 @media (max-width: 768px) {
     .buttons {
-        flex-direction: column;
-        bottom: 18px;
+        width: 90%;
+        gap: 10px;
     }
 
     .btn {
+        flex: 1;
         text-align: center;
-        min-width: 180px;
+        padding: 14px 0;
+        font-size: 14px;
     }
 
     .hint {
-        bottom: 150px;
+        bottom: 78px;
+        font-size: 12px;
     }
 }
 </style>
@@ -93,16 +103,22 @@ img {
 
 <body>
 
-<img src="dm.jpg" alt="豆漿三款DM">
+<div class="page">
+    <img src="投影片1.jpg" alt="投影片1">
+    <img src="投影片2.jpg" alt="投影片2">
+    <img src="投影片3.jpg" alt="投影片3">
+</div>
 
-<div class="hint">輕觸按鈕立即下單</div>
+<div class="hint">往下滑查看更多｜立即下單</div>
 
 <div class="buttons">
     <a class="btn line-btn" href="line://nv/recommendOA/@567ncwhd">
         門市取貨
     </a>
 
-    <a class="btn shop-btn" href="https://famistore.famiport.com.tw/users/2903801" target="_blank">
+    <a class="btn shop-btn"
+       href="https://famistore.famiport.com.tw/users/2903801"
+       target="_blank">
         立即網購
     </a>
 </div>
