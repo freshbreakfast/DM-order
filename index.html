@@ -28,28 +28,44 @@ img {
     display: inline-block;
     padding: 15px 30px;
     margin: 10px;
-    font-size: 16px;
+    font-size: 17px;
     border-radius: 999px;
     text-decoration: none;
     color: white;
     font-weight: bold;
+    letter-spacing: 1px;
     transition: 0.2s;
+    animation: pulse 1.5s infinite;
 }
 
+/* hover 效果 */
 .btn:hover {
     opacity: 0.9;
+    transform: scale(1.05);
 }
 
+/* 門市按鈕（LINE 綠） */
 .store {
-    background-color: #06C755;
+    background: linear-gradient(135deg, #06C755, #04a94b);
+    box-shadow: 0 6px 15px rgba(6,199,85,0.4);
 }
 
+/* 全家按鈕（白＋質感） */
 .online {
-    background-color: #ffffff;
+    background: #ffffff;
     color: #111;
     border: 1px solid #ddd;
+    box-shadow: 0 6px 15px rgba(255,255,255,0.2);
 }
 
+/* 呼吸動畫 */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+    100% { transform: scale(1); }
+}
+
+/* 手機版 */
 @media (max-width: 768px) {
     .btn {
         display: block;
@@ -71,13 +87,13 @@ img {
 <a href="https://freshbreakfast.github.io/order-group/"
    target="_blank"
    class="btn store">
-門市取貨
+👉 按此 立即下單（門市取貨）
 </a>
 
 <a href="https://famistore.famiport.com.tw/users/2903801"
    target="_blank"
    class="btn online">
-立即網購
+👉 按此 立即下單（全家店到店取貨）
 </a>
 
 </div>
