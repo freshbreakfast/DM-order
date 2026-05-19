@@ -1,69 +1,71 @@
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>早餐訂購</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>豆漿優惠活動</title>
 
-  <style>
-    body {
-      margin: 0;
-      text-align: center;
-      font-family: sans-serif;
-      background: #fff;
-    }
+<style>
+body {
+    margin: 0;
+    text-align: center;
+    font-family: sans-serif;
+    background: #111;
+}
 
-    img {
-      width: 100%;
-      max-width: 600px;
-    }
+img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
 
-    .buttons {
-      margin: 20px 0 40px 0;
-    }
+.buttons {
+    margin: 25px 0 50px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 15px 30px;
-      margin: 10px;
-      font-size: 16px;
-      border-radius: 8px;
-      text-decoration: none;
-      color: white;
-    }
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 
-    .store {
-      background-color: #ff6600;
-    }
+.store {
+    background-color: #06C755;
+}
 
-    .online {
-      background-color: #007bff;
-    }
-  </style>
+.online {
+    background-color: #ffffff;
+    color: #111;
+    border: 1px solid #ddd;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- 第一張 -->
-  <img src="image1.png">
+<img src="image1.png" alt="第1頁">
+<img src="image2.png" alt="第2頁">
+<img src="image3.png" alt="第3頁">
 
-  <!-- 第二張 -->
-  <img src="image2.png">
+<div class="buttons">
 
-  <!-- 第三張 -->
-  <img src="image3.png">
+<a href="line://nv/recommendOA/@567ncwhd" class="btn store">
+門市取貨
+</a>
 
-  <!-- ✅ 按鈕（在第三張下面） -->
-  <div class="buttons">
+<a href="https://famistore.famiport.com.tw/users/2903801"
+   target="_blank"
+   class="btn online">
+立即網購
+</a>
 
-    <a href="https://freshbreakfast.github.io/order-group/" target="_blank" class="btn store">
-      門市訂購
-    </a>
-
-    <a href="https://famistore.famiport.com.tw/users/2903801" target="_blank" class="btn online">
-      網路下單
-    </a>
-
-  </div>
+</div>
 
 </body>
 </html>
