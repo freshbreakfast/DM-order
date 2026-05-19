@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>早餐食材優惠活動</title>
+
+<title>早餐食材優惠活動｜鮮到味</title>
+
+<!-- ✅ LINE / FB 預覽優化（關鍵） -->
+<meta property="og:title" content="🔥 早餐食材限時優惠">
+<meta property="og:description" content="👉 按此立即下單｜門市取貨・全家店到店取貨｜熱銷商品售完為止">
+<meta property="og:image" content="https://freshbreakfast.github.io/DM-order/image1.png">
+<meta property="og:url" content="https://freshbreakfast.github.io/DM-order/">
+<meta name="twitter:card" content="summary_large_image">
 
 <style>
 body {
@@ -13,6 +21,7 @@ body {
     background: #111;
 }
 
+/* 圖片 */
 img {
     width: 100%;
     max-width: 600px;
@@ -20,10 +29,25 @@ img {
     margin: 0 auto;
 }
 
-.buttons {
-    margin: 25px 0 50px;
+/* 誘導文字 */
+.top-text {
+    color: #fff;
+    font-size: 18px;
+    margin: 20px 0 10px;
 }
 
+.sub-text {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* 按鈕區 */
+.buttons {
+    margin: 20px 0 80px;
+}
+
+/* 按鈕 */
 .btn {
     display: inline-block;
     padding: 15px 30px;
@@ -38,19 +62,19 @@ img {
     animation: pulse 1.5s infinite;
 }
 
-/* hover 效果 */
+/* hover */
 .btn:hover {
     opacity: 0.9;
     transform: scale(1.05);
 }
 
-/* 門市按鈕（LINE 綠） */
+/* 門市 */
 .store {
     background: linear-gradient(135deg, #06C755, #04a94b);
     box-shadow: 0 6px 15px rgba(6,199,85,0.4);
 }
 
-/* 全家按鈕（白＋質感） */
+/* 全家 */
 .online {
     background: #ffffff;
     color: #111;
@@ -58,14 +82,14 @@ img {
     box-shadow: 0 6px 15px rgba(255,255,255,0.2);
 }
 
-/* 呼吸動畫 */
+/* 動畫 */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.06); }
     100% { transform: scale(1); }
 }
 
-/* 手機版 */
+/* 手機 */
 @media (max-width: 768px) {
     .btn {
         display: block;
@@ -73,15 +97,44 @@ img {
         margin: 12px auto;
     }
 }
+
+/* 🔥 底部浮動按鈕 */
+.fixed-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+    padding: 10px;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.5);
+}
+
+.fixed-btn {
+    display: block;
+    background: #06C755;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 999px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
 </style>
 </head>
 
 <body>
 
-<img src="image1.png" alt="第1頁">
-<img src="image4.png" alt="第2頁">
-<img src="image5.png" alt="第3頁">
+<!-- 🔥 誘導 -->
+<p class="top-text">🔥 今日限時優惠，售完為止！</p>
+<p class="sub-text">✔ 冷凍配送｜✔ 新鮮現做｜✔ 早餐店熱銷款</p>
 
+<!-- 圖片 -->
+<img src="image1.png">
+<img src="image2.png">
+<img src="image3.png">
+
+<!-- 按鈕 -->
 <div class="buttons">
 
 <a href="https://freshbreakfast.github.io/order-group/"
@@ -93,9 +146,17 @@ img {
 <a href="https://famistore.famiport.com.tw/users/2903801"
    target="_blank"
    class="btn online">
-👉 按此 立即下單（全家店到店取貨）
+👉 按此 搶購優惠（全家店到店取貨）
 </a>
 
+</div>
+
+<!-- 🔥 浮動按鈕（超重要） -->
+<div class="fixed-bar">
+<a href="https://freshbreakfast.github.io/order-group/"
+   class="fixed-btn">
+👉 立即下單（門市取貨）
+</a>
 </div>
 
 </body>
