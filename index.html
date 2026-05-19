@@ -21,6 +21,7 @@ body {
     background: #111;
 }
 
+/* 圖片 */
 img {
     width: 100%;
     max-width: 600px;
@@ -28,6 +29,7 @@ img {
     margin: 0 auto;
 }
 
+/* 誘導文字 */
 .top-text {
     color: #fff;
     font-size: 18px;
@@ -40,10 +42,12 @@ img {
     margin-bottom: 20px;
 }
 
+/* 按鈕區 */
 .buttons {
-    margin: 20px 0 80px;
+    margin: 20px 0 50px;
 }
 
+/* 按鈕 */
 .btn {
     display: inline-block;
     padding: 15px 30px;
@@ -58,16 +62,19 @@ img {
     animation: pulse 1.5s infinite;
 }
 
+/* hover */
 .btn:hover {
     opacity: 0.9;
     transform: scale(1.05);
 }
 
+/* 門市 */
 .store {
     background: linear-gradient(135deg, #06C755, #04a94b);
     box-shadow: 0 6px 15px rgba(6,199,85,0.4);
 }
 
+/* 全家 */
 .online {
     background: #ffffff;
     color: #111;
@@ -75,12 +82,14 @@ img {
     box-shadow: 0 6px 15px rgba(255,255,255,0.2);
 }
 
+/* 動畫 */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.06); }
     100% { transform: scale(1); }
 }
 
+/* 手機 */
 @media (max-width: 768px) {
     .btn {
         display: block;
@@ -88,41 +97,21 @@ img {
         margin: 12px auto;
     }
 }
-
-/* 🔥 浮動按鈕 */
-.fixed-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #111;
-    padding: 10px;
-    box-shadow: 0 -3px 10px rgba(0,0,0,0.5);
-}
-
-.fixed-btn {
-    display: block;
-    background: #06C755;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    border-radius: 999px;
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: bold;
-}
 </style>
 </head>
 
 <body>
 
+<!-- 🔥 誘導 -->
 <p class="top-text">🔥 今日限時優惠，售完為止！</p>
-<p class="sub-text">✔ 冷凍配送｜✔ 新鮮現做｜✔ 早餐店熱銷款</p>
+<p class="sub-text">✔ 冷凍配送｜✔ 早餐店熱銷款｜✔ 全台多間店家使用</p>
 
+<!-- 圖片 -->
 <img src="image1.png">
 <img src="image4.png">
 <img src="image5.png">
 
+<!-- 按鈕 -->
 <div class="buttons">
 
 <a href="https://freshbreakfast.github.io/order-group/"
@@ -138,14 +127,5 @@ img {
 </a>
 
 </div>
-
-<!-- 🔥 浮動下單 -->
-<div class="fixed-bar">
-<a href="https://freshbreakfast.github.io/order-group/"
-   class="fixed-btn">
-👉 立即下單（門市取貨）
-</a>
-</div>
-
 </body>
 </html>
