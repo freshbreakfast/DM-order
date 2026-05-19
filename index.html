@@ -1,35 +1,66 @@
-<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>早餐訂購</title>
+
+  <style>
+    body {
+      margin: 0;
+      text-align: center;
+      font-family: sans-serif;
+      background: #fff;
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .buttons {
+      margin: 20px 0 40px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .store {
+      background-color: #ff6600;
+    }
+
+    .online {
+      background-color: #007bff;
+    }
+  </style>
 </head>
 
-<body style="text-align:center; font-family:sans-serif;">
+<body>
 
   <!-- 第一張 -->
-  <img src="image1.jpg" style="width:100%; max-width:600px;"><br>
+  <img src="投影片1.png">
 
   <!-- 第二張 -->
-  <img src="image2.jpg" style="width:100%; max-width:600px;"><br>
+  <img src="投影片2.png">
 
   <!-- 第三張 -->
-  <img src="image3.jpg" style="width:100%; max-width:600px;"><br>
+  <img src="投影片3.png">
 
-  <!-- ✅ 按鈕（第三張下面） -->
-  <div style="margin:20px;">
-    
-    <a href="https://freshbreakfast.github.io/order-group/" target="_blank">
-      <button style="padding:15px 30px; margin:10px; font-size:16px; background:#ff6600; color:white; border:none; border-radius:8px;">
-        門市訂購
-      </button>
+  <!-- ✅ 按鈕（在第三張下面） -->
+  <div class="buttons">
+
+    <a href="https://freshbreakfast.github.io/order-group/" target="_blank" class="btn store">
+      門市訂購
     </a>
 
-    <a href="https://famistore.famiport.com.tw/users/2903801" target="_blank">
-      <button style="padding:15px 30px; margin:10px; font-size:16px; background:#007bff; color:white; border:none; border-radius:8px;">
-        網路下單
-      </button>
+    <a href="https://famistore.famiport.com.tw/users/2903801" target="_blank" class="btn online">
+      網路下單
     </a>
 
   </div>
