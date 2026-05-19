@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>豆漿優惠活動</title>
+<title>早餐食材優惠活動</title>
 
 <style>
 body {
@@ -33,6 +33,11 @@ img {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 .store {
@@ -43,6 +48,14 @@ img {
     background-color: #ffffff;
     color: #111;
     border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        display: block;
+        width: 80%;
+        margin: 12px auto;
+    }
 }
 </style>
 </head>
@@ -56,6 +69,8 @@ img {
 <div class="buttons">
 
 <a href="https://freshbreakfast.github.io/order-group/"
+   target="_blank"
+   class="btn store">
 門市取貨
 </a>
 
