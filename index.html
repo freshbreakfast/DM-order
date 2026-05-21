@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>早餐食材優惠活動</title>
+<title>早餐食材優惠活動｜限時搶購</title>
 
-<!-- ✅ LINE 分享預覽（已修正快取問題） -->
-<meta property="og:title" content="🔥 早餐食材優惠活動">
-<meta property="og:description" content="👉 立即下單｜門市取貨・全家店到店｜早餐店熱銷中">
+<!-- LINE 分享預覽 -->
+<meta property="og:title" content="早餐食材優惠活動｜限時搶購">
+<meta property="og:description" content="門市取貨 / 全家配送・超方便">
 <meta property="og:image" content="https://freshbreakfast.github.io/DM-order/image1.png?v=3">
 <meta property="og:url" content="https://freshbreakfast.github.io/DM-order/?v=3">
 <meta name="twitter:card" content="summary_large_image">
@@ -21,6 +21,29 @@ body {
     background: #111;
 }
 
+/* 🔥 動態標題動畫 */
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+/* 圖片 */
 img {
     width: 100%;
     max-width: 600px;
@@ -28,6 +51,7 @@ img {
     margin: 0 auto;
 }
 
+/* 按鈕 */
 .buttons {
     margin: 25px 0 50px;
 }
@@ -60,6 +84,7 @@ img {
     opacity: 0.9;
 }
 
+/* 手機版 */
 @media (max-width: 768px) {
     .btn {
         display: block;
@@ -72,22 +97,56 @@ img {
 
 <body>
 
-<img src="image1.png" alt="第1頁">
-<img src="image4.png" alt="第2頁">
-<img src="image5.png" alt="第3頁">
+<!-- 🔥 黑底動態標題 -->
+<div style="background:#000; padding:24px 10px; text-align:center; animation: slideDown 0.8s ease-out;">
 
+  <h1 style="margin:0; font-size:22px; line-height:1.5; font-weight:bold;">
+    <span style="color:#ff4d4f; animation: flash 1.2s infinite;">
+      🔥 限時搶購
+    </span><br>
+    <span style="color:#ffffff;">
+      早餐食材優惠活動
+    </span>
+  </h1>
+
+  <p style="margin:12px 0 0; font-size:14px;">
+    <span style="color:#ffd700;">門市取貨</span>
+    <span style="color:#888;"> / </span>
+    <span style="color:#ffd700;">全家配送</span>
+    <span style="color:#ccc;">・超方便</span>
+    <span style="display:inline-block; animation:bounce 1s infinite;">🚚</span>
+  </p>
+
+</div>
+
+<!-- DM 圖片（已修正為完整網址） -->
+<img src="https://freshbreakfast.github.io/DM-order/image1.png?v=3" alt="第1頁">
+<img src="https://freshbreakfast.github.io/DM-order/image4.png?v=3" alt="第2頁">
+<img src="https://freshbreakfast.github.io/DM-order/image5.png?v=3" alt="第3頁">
+
+<!-- 提示 -->
+<p style="color:#ccc; font-size:14px;">
+👇 選擇你的購買方式
+</p>
+
+<!-- 稀缺感 -->
+<p style="color:#ff4d4f; font-size:13px;">
+⏰ 熱銷中，部分商品可能提前完售
+</p>
+
+<!-- 按鈕 -->
 <div class="buttons">
 
 <a href="https://freshbreakfast.github.io/order-group/"
    target="_blank"
    class="btn store">
-👉 立即下單（門市取貨）
+👉 門市現場取貨（最快）
 </a>
 
 <a href="https://famistore.famiport.com.tw/users/2903801"
    target="_blank"
    class="btn online">
-👉 立即下單（全家店到店）
+👉 全家店到店（免出門）
 </a>
 
 </div>
